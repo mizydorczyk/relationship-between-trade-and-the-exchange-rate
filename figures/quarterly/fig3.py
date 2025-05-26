@@ -29,7 +29,7 @@ def plot(trade: pd.DataFrame, exchange_rates: pd.DataFrame, filename: str, categ
     ax1.set_xlabel('Lata')
 
     ax2 = ax1.twinx()
-    sns.lineplot(data=merged, x='Date', y='CNY_per_USD', ax=ax2, color='tab:red', label='CNY/USD', legend=False)
+    sns.lineplot(data=merged, x='Date', y='CNY_per_USD', ax=ax2, color='tab:red', label='Kurs CNY/USD', legend=False)
     ax2.set_ylabel('Kurs CNY/USD')
     ax2.grid(False)
 
